@@ -1,0 +1,22 @@
+# 基础依赖
+torch>=2.0.0
+diffusers>=0.21.0
+transformers>=4.25.0
+Pillow>=9.0.0
+numpy>=1.21.0
+requests>=2.25.0
+
+# 可选依赖 - 根据模型类型安装
+# 对于 FLUX 模型
+# pip install git+https://github.com/huggingface/diffusers.git
+
+# 对于 Stable Diffusion 3
+# pip install diffusers[sd3]
+
+# 对于加速推理
+# accelerate>=0.20.0
+# xformers>=0.0.20  # 用于内存优化
+
+# 对于特殊功能
+# opencv-python>=4.5.0  # 图像处理
+# controlnet-aux  # ControlNet 预处理

@@ -1,0 +1,162 @@
+{
+  "builtin_nodes": [
+    "LoadImage", "SaveImage", "PreviewImage", 
+    "CLIPTextEncode", "CLIPTextEncodeSDXL",
+    "CheckpointLoaderSimple", "CheckpointLoader",
+    "KSampler", "KSamplerAdvanced", "SamplerCustomAdvanced",
+    "VAEDecode", "VAEEncode", "VAELoader",
+    "LatentUpscale", "LatentUpscaleBy",
+    "ModelMergeSimple", "ModelMergeBlocks",
+    "ControlNetLoader", "ControlNetApply", "ControlNetApplyAdvanced",
+    "LoraLoader", "LoraLoaderModelOnly",
+    "BasicScheduler", "KarrasScheduler", "ExponentialScheduler",
+    "KSamplerSelect", "DualCFGGuider", "CFGGuider",
+    "RandomNoise", "EmptyLatentImage",
+    "UpscaleModelLoader", "ImageUpscaleWithModel",
+    "InstructPixToPixConditioning",
+    "PrimitiveNode", "Reroute", "Note",
+    "ImageScale", "ImageScaleBy", "ImageCrop", "ImagePadForOutpaint",
+    "ConditioningAverage", "ConditioningCombine", "ConditioningConcat",
+    "ConditioningSetArea", "ConditioningSetAreaPercentage", "ConditioningSetMask",
+    "StyleModelLoader", "StyleModelApply",
+    "CLIPVisionLoader", "CLIPVisionEncode", "unCLIPConditioning",
+    "GLIGENLoader", "GLIGENTextBoxApply",
+    "HypernetworkLoader",
+    "PhotoMakerLoader", "PhotoMakerEncode",
+    "DiffusersLoader",
+    "FreeU", "FreeU_V2",
+    "PatchModelAddDownscale", "PatchModelAddLora",
+    "ModelSamplingDiscrete", "ModelSamplingContinuousEDM",
+    "RescaleCFG", "SamplerDPMPP_2M", "SamplerDPMPP_SDE",
+    "SamplerEuler", "SamplerEulerAncestral", "SamplerHeun",
+    "SamplerDPM_2", "SamplerDPM_2_Ancestral", "SamplerLMS",
+    "SamplerDDIM", "SamplerUniPC", "SamplerDPMPP_2M_SDE",
+    "DDPM", "DDIM"
+  ],
+  "known_custom_nodes": {
+    "rgthree-comfy": {
+      "title": "rgthree's ComfyUI Nodes",
+      "github_url": "https://github.com/rgthree/rgthree-comfy",
+      "install_url": "https://github.com/rgthree/rgthree-comfy.git",
+      "description": "包含多种实用工具节点",
+      "nodes": [
+        "Any Switch (rgthree)",
+        "Fast Bypasser (rgthree)",
+        "Context (rgthree)",
+        "Context Switch (rgthree)",
+        "Context Merge (rgthree)",
+        "Seed (rgthree)",
+        "Image Comparer (rgthree)",
+        "Bookmark (rgthree)"
+      ]
+    },
+    "ComfyUI-ZHO": {
+      "title": "ComfyUI ZHO 节点包",
+      "github_url": "https://github.com/AIGODLIKE/ComfyUI-ZHO",
+      "install_url": "https://github.com/AIGODLIKE/ComfyUI-ZHO.git",
+      "description": "ZHO 系列节点，包含艺术家、风格、运动等图片库节点",
+      "nodes": [
+        "ConcatText_Zho",
+        "ArtistsImage_Zho", 
+        "MovementsImage_Zho",
+        "StylesImage_Zho",
+        "ShowText_Zho",
+        "DisplayText_Zho"
+      ]
+    },
+    "ComfyUI-Manager": {
+      "title": "ComfyUI Manager",
+      "github_url": "https://github.com/ltdrdata/ComfyUI-Manager",
+      "install_url": "https://github.com/ltdrdata/ComfyUI-Manager.git", 
+      "description": "ComfyUI 节点管理器，用于安装和管理自定义节点",
+      "nodes": []
+    },
+    "efficiency-nodes-comfyui": {
+      "title": "Efficiency Nodes for ComfyUI",
+      "github_url": "https://github.com/LucianoCirino/efficiency-nodes-comfyui",
+      "install_url": "https://github.com/LucianoCirino/efficiency-nodes-comfyui.git",
+      "description": "提高工作流效率的节点集合",
+      "nodes": [
+        "Efficient Loader",
+        "KSampler (Efficient)",
+        "Script Node"
+      ]
+    },
+    "was-node-suite-comfyui": {
+      "title": "WAS Node Suite",
+      "github_url": "https://github.com/WASasquatch/was-node-suite-comfyui",
+      "install_url": "https://github.com/WASasquatch/was-node-suite-comfyui.git",
+      "description": "大型节点套件，包含图像处理、文本处理等功能",
+      "nodes": [
+        "Image Save",
+        "Text Concatenate",
+        "Number to Int",
+        "Number to Float"
+      ]
+    },
+    "ComfyUI-Custom-Scripts": {
+      "title": "ComfyUI Custom Scripts",
+      "github_url": "https://github.com/pythongosssss/ComfyUI-Custom-Scripts",
+      "install_url": "https://github.com/pythongosssss/ComfyUI-Custom-Scripts.git",
+      "description": "自定义脚本和界面增强",
+      "nodes": [
+        "Show Text",
+        "Show Image"
+      ]
+    },
+    "ComfyUI_IPAdapter_plus": {
+      "title": "ComfyUI IPAdapter Plus",
+      "github_url": "https://github.com/cubiq/ComfyUI_IPAdapter_plus",
+      "install_url": "https://github.com/cubiq/ComfyUI_IPAdapter_plus.git",
+      "description": "增强的 IP-Adapter 节点",
+      "nodes": [
+        "IPAdapter",
+        "IPAdapter Advanced",
+        "IPAdapter Tiled"
+      ]
+    },
+    "comfyui_controlnet_aux": {
+      "title": "ControlNet Auxiliary Preprocessors",
+      "github_url": "https://github.com/Fannovel16/comfyui_controlnet_aux",
+      "install_url": "https://github.com/Fannovel16/comfyui_controlnet_aux.git",
+      "description": "ControlNet 预处理器节点",
+      "nodes": [
+        "CannyEdgePreprocessor",
+        "OpenposePreprocessor",
+        "DepthAnythingPreprocessor"
+      ]
+    },
+    "ComfyUI-Impact-Pack": {
+      "title": "ComfyUI Impact Pack",
+      "github_url": "https://github.com/ltdrdata/ComfyUI-Impact-Pack",
+      "install_url": "https://github.com/ltdrdata/ComfyUI-Impact-Pack.git",
+      "description": "面部检测和分割相关节点",
+      "nodes": [
+        "FaceDetailer",
+        "UltralyticsDetectorProvider",
+        "SAMLoader"
+      ]
+    },
+    "ComfyUI_Comfyroll_CustomNodes": {
+      "title": "Comfyroll Custom Nodes",
+      "github_url": "https://github.com/RockOfFire/ComfyUI_Comfyroll_CustomNodes",
+      "install_url": "https://github.com/RockOfFire/ComfyUI_Comfyroll_CustomNodes.git",
+      "description": "Comfyroll 自定义节点集合",
+      "nodes": [
+        "CR Image Output",
+        "CR Load Animation Frames",
+        "CR Apply ControlNet"
+      ]
+    },
+    "ComfyUI-AnimateDiff-Evolved": {
+      "title": "AnimateDiff Evolved",
+      "github_url": "https://github.com/Kosinkadink/ComfyUI-AnimateDiff-Evolved",
+      "install_url": "https://github.com/Kosinkadink/ComfyUI-AnimateDiff-Evolved.git",
+      "description": "AnimateDiff 视频生成节点",
+      "nodes": [
+        "AnimateDiff Loader",
+        "Apply AnimateDiff Model"
+      ]
+    }
+  }
+}

@@ -719,3 +719,32 @@ https://github.com/ZHO-ZHO-ZHO/ComfyUI-APISR/assets/140084057/e6deb435-d276-4726
 ## Stars 
 
 [![Star History Chart](https://api.star-history.com/svg?repos=ZHO-ZHO-ZHO/ComfyUI-Workflows-ZHO&type=Date)](https://star-history.com/#ZHO-ZHO-ZHO/ComfyUI-Workflows-ZHO&Date)
+
+## 🔄 工作流转换器 (Workflow Converter)
+
+本仓库现在包含一个强大的 **ComfyUI 工作流转换器**，可以将 ComfyUI 工作流转换为使用 diffusers、transformers 等标准 Python 库的脚本！
+
+### ✨ 特性
+- 🎯 **自动识别模型类型**: FLUX、SD3、SDXL、Stable Cascade 等
+- 🔧 **智能转换**: 将 ComfyUI 节点转换为对应的 diffusers 代码  
+- 📦 **批量处理**: 一键转换所有工作流
+- 🐍 **纯 Python**: 生成可独立运行的 Python 脚本
+- 📚 **完整文档**: 详细使用说明和示例
+
+### 🚀 快速开始
+
+```bash
+# 转换所有工作流
+python convert.py --all
+
+# 转换单个工作流
+python convert.py -i "workflows/zho/FLUX.1 SCHNELL 1.0.json" -o flux_script.py
+
+# 查看示例
+python example_runner.py
+```
+
+### 📖 详细文档
+查看 [README_CONVERTER.md](README_CONVERTER.md) 了解完整使用说明。
+
+---
