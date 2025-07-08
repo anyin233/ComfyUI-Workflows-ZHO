@@ -1,0 +1,11 @@
+[workspace]
+authors = ["Yanwei Ye <cydia2001@duck.com>"]
+channels = ["conda-forge"]
+name = "ComfyUI-Workflows-ZHO"
+platforms = ["osx-arm64"]
+version = "0.1.0"
+
+[tasks]
+
+[dependencies]
+requests = ">=2.32.4,<3"
